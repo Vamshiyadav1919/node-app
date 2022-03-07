@@ -6,8 +6,8 @@ var cors = require('cors')
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
 
-app.listen(3000)
-console.log('Node.js Express server is running on port 8000..')
+app.listen(3000) // Express server is running on port 8000
+console.log('Node.js Express server is running on port 8000..') 
 //app.get('/data/2.5/weather',get_weather)
 app.get('/v1/weather', get_weather_v1)
 app.get('/v1/hello', get_hello)
@@ -51,3 +51,4 @@ function post_auth(req,res){
         }
       });
 }
+
